@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="assets/css/materialize.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/css/animate.css/">
+    </head>
+    <body>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center"><img src="assets/img/LOGO.PNG" style="height: 65px;"></a>
+            </div>
+        </nav>
+        <section class="container">
+            <div class="row">
+                <div class="col s12">
+                    <ul id="students" class="collapsible popout" data-collapsible="accordion">
+                        <!--<li>-->
+                            <!--<div class="collapsible-header bold grey-text"><span class="yellow-text">Full Name |</span> Omoniyi Oluwafemi <div class="right"><span class="yellow-text">Matric No. |</span> CSC/2013/075</div></div>-->
+                            <!--<div class="collapsible-body black">-->
+                                <!--<div class="row padding grey-text">-->
+                                    <!--<div class="col s4"><span class="yellow-text">Part |</span> 2</div>-->
+                                    <!--<div class="col s4"><span class="yellow-text">Department |</span> Computer</div>-->
+                                    <!--<div class="col s4"><span class="yellow-text">Faculty |</span> Technology</div>-->
+                                <!--</div>-->
+                                <!--<div class="row padding grey-text">-->
+                                    <!--<div class="col s4"><span class="yellow-text">Phone No. | </span> 08163572641</div>-->
+                                    <!--<div class="col s4"><span class="yellow-text">Guardian's No. | </span> 08033321297</div>-->
+                                    <!--<div class="col s4"><span class="yellow-text">Hall of Residence | </span> TOWN</div>-->
+                                <!--</div>-->
+                                <!--<div class="row padding grey-text">-->
+                                    <!--<div class="col s12"><span class="yellow-text">Home Address | </span> sd</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</li>-->
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <a class="btn-floating btn-large waves-effect waves-light yellow darken-2 modal-trigger" href="#add_student" style="position:fixed; bottom: 45px; right:15%;"><i class="fa fa-plus"></i></a>
+        <section class="modals">
+            <div id="add_student" class="modal bottom-sheet">
+                <div class="modal-content">
+                    <h4>Add Student</h4>
+                    <div class="row container">
+                        <div class="input-field col s6">
+                            <input id="surname" type="text" class="validate">
+                            <label for="surname">Surname</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="firstname" type="text" class="validate">
+                            <label for="firstname">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="matric_no" type="text" class="validate">
+                            <label for="matric_no">Matric No.</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="part" type="text" class="validate">
+                            <label for="part">Part</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="department" type="text" class="validate">
+                            <label for="department">Department</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="faculty" type="text" class="validate">
+                            <label for="faculty">Faculty</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="phone_no" type="text" class="validate">
+                            <label for="phone_no">Phone No.</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="guard_no" type="text" class="validate">
+                            <label for="guard_no">Guardian's No</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="sch_add" type="text" class="validate">
+                            <label for="sch_add">Hall of Residence</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="home_add" type="text" class="validate">
+                            <label for="home_add">Home Address</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" id="add_student_button" class="modal-action modal-close waves-effect btn-flat black white-text"><i class="fa fa-plus fa-2x"></i> ADD</a>
+                </div>
+            </div>
+            <div id="edit_students">
+
+            </div>
+        </section>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bin/materialize.min.js"></script>
+        <script src="assets/js/app/constants.js"></script>
+        <script src="assets/js/app/events.js"></script>
+        <script src="assets/js/app/functions.js"></script>
+        <script src="assets/js/app/wow.min.js"></script>
+        <script>
+            get_students();
+            $(document).ready(function(){
+                // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+                $('.modal-trigger').leanModal();
+            });
+        </script>
+    </body>
+</html>

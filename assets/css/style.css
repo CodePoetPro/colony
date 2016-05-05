@@ -1,0 +1,31 @@
+html.home,body.homes{
+    background-color: #000;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('../img/bg.png');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    height:100%;
+}
+.transparent_bg{
+    opacity: 0.8;
+}
+.padding{
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+}
+input{
+    color:#f4b400;
+}
+.capitalise{
+    text-transform: UPPERCASE;
+}
+.bottom-sheet{
+    min-height: 90%;
+    background: rgba(255,255,255,0.8);
+}
+.bottom-sheet> .modal-footer{
+    position: absolute;
+    bottom: 0px;
+}
